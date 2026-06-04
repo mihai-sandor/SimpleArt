@@ -1,65 +1,147 @@
 <!DOCTYPE html>
 <html lang="ro">
-    <head>
+<head>
     <meta charset="UTF-8">
-    <title>Galerie Art</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Galerie Art - SimpleArt</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome pentru iconițe -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    </head>
-    <body>
-        <header>
+    
+</head>
+<body>
 
+    <header>
+        <div class="logo">
             <h2>SimpleArt</h2>
-            <!--Butoane de Navigare-->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Acasa</a></li>
-                    <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="cos.html">Cos</a></li>
-                </ul>
-            </nav>
-            <div>
-                <a href="#cos-cumparaturi"><i class="fa-solid fa-cart-shopping cos-cumparaturi"></i></a>
-            </div>
-        </header>
-        <main>
-            <section id="hero-gallery">
-                <h1>Toate tablourile</h1>
-            </section>
-            <!-- Butoane de Filtrare -->
-            <section id="filters">
-                <div>
-                    <button>Toate</button>
-                    <button>Abstract</button>
-                    <button>Peisaje</button>
-                    <button>Portrete</button>
-                </div>
-                <div>
-                    <select>
-                        <option>Sortare după preț</option>
-                        <option>Sortare după nume</option>
-                    </select>
-                    <!-- Buton pentru vizualizare Grid -->
-                    <button class="btn-layout">
-                        <i class="fa-solid fa-table-cells-large"></i> 
-                    </button>
+        </div>
+        <!-- Navigație -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="galerie.html" class="active">Galerie</a></li>
+                <li><a href="cos.html">Coș</a></li>
+            </ul>
+        </nav>
+        <!-- Iconiță Coș de cumpărături -->
+        <div class="cart-wrapper">
+            <a href="#cos-cumparaturi">
+                <i class="fa-solid fa-cart-shopping cos-cumparaturi"></i>
+            </a>
+        </div>
+    </header>
 
-                    <!-- Buton pentru vizualizare Listă -->
-                    <button class="btn-layout">
-                        <i class="fa-solid fa-list"></i> 
-                    </button>
-                </div>
-            </section>
-            <!-- Grila cu tablouri-->
-            <section id="gallery-grid">
-                <div>
-                    <article class="product-card">
-                        <div class="image-container">
-                            <img src="assets/images/poza carduri.jpg">
-                            <h3>Tablou 1</h3>
-                        </div>
-                    </article>
-                </div>
-            </section>
+    <main>
+        <section id="hero-gallery">
+            <h1>Toate tablourile</h1>
+        </section>
+        <!-- Filtare și sortare -->
+        <section id="filters">
+            <div class="category-filters">
+                <button class="btn-filter active">Toate</button>
+                <button class="btn-filter">Abstract</button>
+                <button class="btn-filter">Peisaje</button>
+                <button class="btn-filter">Portrete</button>
+            </div>
             
+            <div class="sort-filters">
+                <select aria-label="Sortare tablouri">
+                    <option value="price-asc">Sortare după preț: mic la mare</option>
+                    <option value="price-desc">Sortare după preț: mare la mic</option>
+                    <option value="name">Sortare după nume</option>
+                </select>
+
+                <button class="btn-layout" aria-label="Vizualizare Grid">
+                    <i class="fa-solid fa-table-cells-large"></i> 
+                </button>
+                <button class="btn-layout" aria-label="Vizualizare Listă">
+                    <i class="fa-solid fa-list"></i> 
+                </button>
+            </div>
+        </section>
+
+        <section id="gallery-grid">
+            <!-- Exemplu de card de produs, repetat pentru fiecare tablou din galerie -->
+            <article class="product-card">
+                <div class="image-container">
+                    <img src="assets/images/poza carduri.jpg" alt="Tablou Abstract - Model 1">
+                </div>
+                <div class="product-info">
+                    <h4>Tablou 1</h4>
+                    <p class="product-price">499 lei</p>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="image-container">
+                    <img src="assets/images/poza carduri.jpg" alt="Tablou Peisaj - Model 2">
+                </div>
+                <div class="product-info">
+                    <h4>Tablou 2</h4>
+                    <p class="product-price">499 lei</p>
+                </div>
+            </article>
+             <article class="product-card">
+                <div class="image-container">
+                    <img src="assets/images/poza carduri.jpg" alt="Tablou Peisaj - Model 2">
+                </div>
+                <div class="product-info">
+                    <h4>Tablou 3</h4>
+                    <p class="product-price">499 lei</p>
+                </div>
+            </article>
+             <article class="product-card">
+                <div class="image-container">
+                    <img src="assets/images/poza carduri.jpg" alt="Tablou Peisaj - Model 2">
+                </div>
+                <div class="product-info">
+                    <h4>Tablou 4</h4>
+                    <p class="product-price">499 lei</p>
+                </div>
+            </article>
+             <article class="product-card">
+                <div class="image-container">
+                    <img src="assets/images/poza carduri.jpg" alt="Tablou Peisaj - Model 2">
+                </div>
+                <div class="product-info">
+                    <h4>Tablou 5</h4>
+                    <p class="product-price">499 lei</p>
+                </div>
+            </article>
+             <article class="product-card">
+                <div class="image-container">
+                    <img src="assets/images/poza carduri.jpg" alt="Tablou Peisaj - Model 2">
+                </div>
+                <div class="product-info">
+                    <h4>Tablou 6</h4>
+                    <p class="product-price">499 lei</p>
+                </div>
+            </article>
+             <article class="product-card">
+                <div class="image-container">
+                    <img src="assets/images/poza carduri.jpg" alt="Tablou Peisaj - Model 2">
+                </div>
+                <div class="product-info">
+                    <h4>Tablou 7</h4>
+                    <p class="product-price">499 lei</p>
+                </div>
+            </article>
+             <article class="product-card">
+                <div class="image-container">
+                    <img src="assets/images/poza carduri.jpg" alt="Tablou Peisaj - Model 2">
+                </div>
+                <div class="product-info">
+                    <h4>Tablou 8</h4>
+                    <p class="product-price">499 lei</p>
+                </div>
+            </article>
+            
+
+            </section>
+        <!-- Buton "Încarcă mai multe" -->
+        <div class="load-more">
+            <button class="btn-load">Încarcă mai multe</button>
+        </div>
+    </main>
+
+    </body>
 </html>
