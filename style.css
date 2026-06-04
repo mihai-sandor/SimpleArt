@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f7f2; 
+    color: #333; 
+    line-height: 1.6;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px 10%; 
+    background-color: white;
+}
+
+header ul {
+    display: flex;
+    list-style: none; 
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none; 
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    min-height: 80vh; 
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.buton {
+    
+    display: inline-block;    
+    padding: 15px 35px;       
+    
+    color:#333;
+    background-color: #8B5E3C;            
+    text-decoration: none;    
+    text-transform: uppercase; 
+    font-weight: bold;        
+    letter-spacing: 1px;      
+    
+   
+    border-radius: 50px;     
+    transition: all 0.3s ease; 
+    margin-top: 20px;         
+}
+
+
+.buton:hover {
+    background-color: #A67B5B; 
+    transform: translateY(-3px); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
+}
+
+.colectie {
+    padding: 60px 8%;
+}
+
+.colectie h2 {
+    margin-bottom: 30px;
+}
+
+.carduri {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+.card {
+    position: relative; 
+    border-radius: 20px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    color: white;
+    font-size: 1.8rem;
+    z-index: 1;
+}
+
+
+.card:hover img {
+    transform: scale(1.1); 
+}
+.cos-cumparaturi {
+            font-size: 20px;      /* Schimbă mărimea */
+            color: #2ecc71;       /* Schimbă culoarea (verde în cazul ăsta) */
+            cursor: pointer;      /* Pune cursorul de tip mână la hover */
+            transition: color 0.3s;
+        }
+
+.cos-cumparaturi:hover {
+            color: #0d371e;       /* Culoarea se închide puțin când pui mouse-ul pe ea */
+        }
