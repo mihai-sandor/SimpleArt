@@ -10,7 +10,9 @@ body {
     color: #333; 
     line-height: 1.6;
 }
-
+/* ==========================================================================
+   2. PAGINA PRINCIPALĂ (Doar pentru index.html)
+   ========================================================================== */
 header {
     display: flex; 
     justify-content: space-between; 
@@ -147,6 +149,154 @@ header ul li a:hover {
     transition: scale 0.3s;
 }
 
+/* ==========================================================================
+   6. SECȚIUNEA BENEFICII (Trust Badges)
+   ========================================================================== */
+
+.benifici { 
+    display: flex;
+    justify-content: space-around; 
+    text-align: center;
+    
+    /* Culori și Formă */
+    background-color: #ffffff;    
+    padding: 40px 5%;
+    border-radius: 20px;          
+    
+    
+    margin: 80px 10% 0 10%;       
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
+}
+
+.beneficiu {
+    flex: 1;                      
+    padding: 0 20px;
+}
+
+
+.beneficiu:not(:last-child) {
+    border-right: 1px solid #f0eae0; 
+}
+
+.beneficiu h3 {
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.beneficiu p {
+    font-size: 0.9rem;
+    color: #777777;               
+}
+
+
+@media (max-width: 768px) {
+    .benifici {
+        flex-direction: column;   
+        gap: 35px;               
+        margin: 50px 5% 0 5%;
+        padding: 40px 20px;
+    }
+    
+    .beneficiu:not(:last-child) {
+        border-right: none;       
+        border-bottom: 1px solid #f0eae0; 
+        padding-bottom: 25px;
+    }
+}
+
+/* --- DESIGN FOOTER PREMIUM --- */
+
+.footer-principal {
+    background-color: #111111; 
+    color: #b0b0b0;           
+    padding: 70px 10% 25px 10%;
+    margin-top: 80px;         
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; 
+    gap: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #222; 
+}
+
+.footer-col h3.footer-logo {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.footer-col h4 {
+    color: #8B5E3C; 
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-col p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Stil pentru listele de linkuri */
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+
+.sociale li a i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+    color: #8B5E3C; 
+    transition: color 0.3s;
+}
+
+.sociale li a:hover i {
+    color: #ffffff; 
+}
+
+/* Zona de copyright de la baza site-ului */
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Responsivitate pentru ecrane de telefon */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Pe telefon se pun toate una sub alta */
+        gap: 30px;
+    }
+}
+
+/* ==========================================================================
+   3. PAGINA GALERIE (Doar pentru galerie.html)
+   ========================================================================== */
 
 /* 2. Hero Gallery Section */
 #hero-gallery {
@@ -235,6 +385,10 @@ header ul li a:hover {
     background-color: #eeebe3;
     color: #111;
 }
+
+/* ==========================================================================
+   4. PAGINA TABLOUL 1 (Doar pentru tablou_1.html)
+   ========================================================================== */
 
 /* 4. Grila de Tablouri Nouă (CSS Grid Direct pe Article) */
 #gallery-grid {
@@ -351,6 +505,5 @@ header ul li a:hover {
     
     .product-card .image-container {
         height: 260px; /* Pozele devin puțin mai mici pe ecrane de telefon pentru a fi ușor de urmărit */
-    }
-    
+       } 
 }
