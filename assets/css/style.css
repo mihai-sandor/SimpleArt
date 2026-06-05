@@ -321,8 +321,10 @@ header ul li a:hover {
     background-color: #555;
     transform: translateY(-2px);
 }
+/* Stilizare tablou_1.html */
 
 /* 6. Reguli de Responsivitate pentru Mobile / Tablete */
+
 @media (max-width: 768px) {
     #filters {
         flex-direction: column;
@@ -350,4 +352,5 @@ header ul li a:hover {
     .product-card .image-container {
         height: 260px; /* Pozele devin puțin mai mici pe ecrane de telefon pentru a fi ușor de urmărit */
     }
+    
 }
