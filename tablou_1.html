@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coș - SimpleArt</title>
+    <title>Tablou Learning to code - SimpleArt</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Font Awesome pentru iconițe -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -31,13 +31,15 @@
         </div>
     </header>
     <main>
-        <section>
-            <div>
-                <img src="assets/images/tablou_1.png" alt="Tablou Learning to code" class="main-product-image">
+        <section class="product-page">
+            <div class="product-media">
+                <div class="product-image-card">
+                    <img src="assets/images/tablou_1.png" alt="Tablou Learning to code" class="main-product-image">
+                </div>
             </div>
-            <div >
-                <h2 >Learning to code</h2>
-                <p >399 lei</p>
+            <div class="product-summary">
+                <h2 class="product-title">Learning to code</h2>
+                <p class="product-price">399 lei</p>
                 <div class="product-rating">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -46,15 +48,14 @@
                     <i class="fa-solid fa-star-half-stroke"></i>
                     <span>(14 recenzii)</span>
                 </div>
-            </div>
-            <div>
+                <div class="product-description">
                 <p>
                     Aceast tablou ilustreaza rabdarea si perseverenta necesare pentru a invata sa codezi.
                     Conexiunea dintre tata si fiu, iar sprijinul oferit de tatal sau in calatoria sa de a invata programarea, este evidentiata in aceasta imagine.
                     Este un reminder ca, desi invatarea sa codezi poate fi dificila, cu sprijinul potrivit si dedicare, orice este posibil.
                 </p>
             </div>
-            <div>
+            <div class="product-options">
                     <label for="frame-size">Alege dimensiunea:</label>
                     <select id="frame-size">
                         <option value="sm">50 x 70 cm (Standard)</option>
@@ -62,7 +63,7 @@
                         <option value="lg">100 x 140 cm (+300 lei)</option>
                     </select>
             </div>
-            <div>
+            <div class="product-action">
                 <button class="buton btn-add-cart">
                     <i class="fa-solid fa-bag-shopping"></i> Adaugă în coș
                 </button>
@@ -77,12 +78,46 @@
                         <p>Garanție de retur de 14 zile inclusă.</p>
                     </div>
                 </div>
+            </div>
+            
+            
         
         </section>
 
     </main>
-    <footer>
+    <footer class="footer-principal">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3 class="footer-logo">SimpleArt</h3>
+            <p>Arta care îți transformă spațiul. Tablouri premium alese special pentru a aduce eleganță și inspirație în casa ta.</p>
+        </div>
 
+        <div class="footer-col">
+            <h4>Navigare</h4>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="about.html">Despre noi</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Urmărește-ne</h4>
+            <p>Suntem activi aici. Aruncă o privire peste ultimele noutăți:</p>
+            <ul class="sociale">
+                <li>
+                    <a href="https://www.instagram.com/notyourcatalin/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 SimpleArt. Toate drepturile rezervate.</p>
+    </div>
     </footer>
 </body>
 </html>

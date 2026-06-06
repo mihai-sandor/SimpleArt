@@ -476,6 +476,56 @@ header ul li a:hover {
     transform: translateY(-2px);
 }
 /* Stilizare tablou_1.html */
+.product-page {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    padding: 50px 10%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.product-media {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.product-image-card {
+    position: relative;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+    background-color: #f5f2eb;
+    img {
+        width: 545px;
+        height: 745px;
+        object-fit: cover;
+        display: block;
+    }
+
+}
+.product-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.product-title {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+}
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #8B5E3C;
+}
+.product-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
 
 /* 6. Reguli de Responsivitate pentru Mobile / Tablete */
 
